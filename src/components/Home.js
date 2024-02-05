@@ -61,10 +61,12 @@ function Home() {
                         <Card style={{ width: '18rem', height: '30rem' }} className='card_body'>
                             <Card.Img variant="top" src={item.image} style={{ width: '100%', height: '200px' }} />
                             <Card.Body style={{ height: '13rem' }} className='text-center'>
-                                <Card.Title style={{ height: '3rem' }} className='mt-3'>{item.title.length > 25 ? item.title.slice(0, 25) + "..." : item.title}</Card.Title>
+                                <Card.Title style={{ height: '3rem' }} className='mt-3 item_name'>{item.title.length > 25 ? item.title.slice(0, 25) + "..." : item.title}</Card.Title>
+
                                 <Card.Text className='mt-2'><h3>$ {item.price}</h3></Card.Text>
 
-
+                                <i className="fa-regular fa-star-half-stroke text-warning"></i>
+                                <i className="fa-regular fa-star-half-stroke text-warning"></i>
                                 <i className="fa-regular fa-star-half-stroke text-warning"></i>
                                 <i className="fa-regular fa-star-half-stroke text-warning"></i>
                                 <i className="fa-regular fa-star-half-stroke text-warning"></i>

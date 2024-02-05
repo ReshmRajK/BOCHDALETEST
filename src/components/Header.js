@@ -21,7 +21,7 @@ function Header() {
       <Navbar expand="lg" style={{ backgroundColor: 'orange' }}>
         <Container fluid>
           <Navbar.Brand onClick={() => navigate('/')} className='nav_title'>
-            <i className="fa-solid fa-shop fa-beat me-3 text-white  nav_icon"></i>
+            <i className="fa-solid fa-shop fa-beat me-3 text-white ms-2  nav_icon"></i>
             FlipKart
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
