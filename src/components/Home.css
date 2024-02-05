@@ -1,5 +1,6 @@
 .card_body {
     border: 2px solid orange;
+    border-radius: 10px;
 }
 
 .btn_view {
