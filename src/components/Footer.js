@@ -1,10 +1,9 @@
 import React from 'react'
 import './Footer.css'
 
-
 function Footer() {
   return (
-    <div style={{ width: '100vw', backgroundColor: 'orange' }} className='p-2 text-center'>
+    <div style={{ width: '100vw'}} className='foot_section p-2 text-center'>
 
       <p>Copyright @ 2000</p>
       <div className='d-flex justify-content-center gap-4'>

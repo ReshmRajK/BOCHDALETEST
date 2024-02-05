@@ -18,7 +18,7 @@ function Header() {
   return (
     <div style={{ width: '100vw' }}>
 
-      <Navbar expand="lg" style={{ backgroundColor: 'orange' }}>
+      <Navbar expand="lg" className='header_section'>
         <Container fluid>
           <Navbar.Brand onClick={() => navigate('/')} className='nav_title'>
             <i className="fa-solid fa-shop fa-beat me-3 text-white ms-2  nav_icon"></i>
