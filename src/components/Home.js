@@ -45,7 +45,16 @@ function Home() {
             </div>
 
 
-            <div className='d-flex justify-content-center align-items-center gap-3 mt-5 flex-wrap mb-5'>
+            <div >
+                
+                {
+                     loading &&
+                     <div className='d-flex justify-content-center  align-items-center mt-5'>
+                         <i class="fa-solid fa-spinner fa-spin fa-5x" style={{ color: 'orange' }}></i>
+                     </div>
+
+                }
+                <div className='d-flex justify-content-center align-items-center gap-3 mt-5 flex-wrap mb-5'>
 
                 {
                     allProducts.length > 0 ? allProducts.map(item => (
@@ -67,12 +76,12 @@ function Home() {
                         </Card>
 
                     )) :
-                        loading &&
-                        <div className='d-flex align-items-center'>
-                            <i class="fa-solid fa-spinner fa-spin fa-5x" style={{ color: 'orange' }}></i>
-                        </div>
-
+                    <h1>Sorry....,Product Not Found
+                        <p className='text-center'><i className="fa-solid fa-face-smile-beam fa-beat-fade text-warning mt-3 fa-2x"></i></p>
+                    </h1>
+                       
                 }
+                </div>
 
             </div>
 
